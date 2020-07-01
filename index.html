@@ -1,150 +1,23 @@
-<!DOCTYPE />
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-
-
-<title>Web</title>
-<main charset = "utf-8" />
-
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>todoapp</title>
 <style>
+body{
 
-html,
-body {
-  margin: 0;
-  padding: 0;
+
+
+
+
+}
+.container{
+
+margin-top:120px;
+margin-right:200px;
 }
 
-.container {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-.header {
-  background-color: #333333;
-}
-
-.jumbotron {
-  background-image: url('https://s3.amazonaws.com/codecademy-content/projects/broadway/bg.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 800px;
-}
-
-.nav {
-  margin: 0;
-  padding: 20px 0;
-}
-
-.nav li {
-  display: inline;
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  text-transform: uppercase;
-  margin-right: 25px;
-}
-
-.main {
-  position: relative;
-  top: 180px;
-  text-align: center;
-}
-
-.main h1 {
-  color: #333;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 70px;
-  margin-top: 0;
-  margin-bottom: 80px;
-  text-transform: uppercase;
-}
-
-.btn-main {
-  background-color: #333;
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  letter-spacing: 1.3px;
-  padding: 16px 40px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.supporting {
-  padding-top: 80px;
-  padding-bottom: 100px;
-}
-
-.supporting .col {
-  float: left;
-  width: 33%;
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-}
-
-.supporting img {
-  height: 32px;
-}
-
-.supporting h2 {
-  font-weight: 600;
-  font-size: 23px;
-  text-transform: uppercase;
-}
-
-.supporting p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 0 50px;
-  margin-bottom: 40px;
-}
-
-.btn-default {
-  border: 1px solid #333333;
-  color: #333;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 10px;
-  letter-spacing: 1.3px;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: inline-block;
-  margin-bottom: 20px;
-  padding: 15px 50px;
-}
-
-.clearfix {
-  clear: both;
-}
-
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 30px 0;
-}
-
-.footer p {
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  font-size: 11px;
-}
-
-@media (max-width: 500px) {
-  .main h1 {
-    font-size: 50px;
-    padding: 0 40px;
-  }
-  .supporting .col {
-    width: 100%;
-  }
-}
 
 
 
@@ -153,80 +26,39 @@ body {
 </head>
 <body>
 
-<html>
 
-<html>
+<div class="container">
+ <h3 class = "giris">Giriş Yap</h3>
+ <hr>
 
-<head>
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
-  <link rel='stylesheet' href='style.css' />
-</head>
+<form action="addTodo" method="post">
 
-<body>
-  <div class="header">
-    <div class="container">
-      <ul class="nav">
-        <li>Hakkinda</li>
-        <li>Giris Yap</li>
-        <li>Abonelik</li>
-        <li>Iletisim</li>
-      </ul>
-    </div>
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Kullanıcı Adı</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">E-postanızı asla başkasıyla paylaşmayın.</small>
   </div>
-
-  <div class="jumbotron">
-    <div class="container">
-      <div class="main">
-        <h1>KAGAN YAYINCILIK</h1>
-        <a href="#" class="btn-main">Hizmetinizde</a>
-      </div>
-    </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Şifre</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
   </div>
-
-  <div class="supporting">
-    <div class="container">
-      <div class="col">
-        <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/design.svg">
-        <h2>Yazilarimiz</h2>
-        <p>Kagan yayincilk tarafından her ayın 1 ve 15 de dergimiz basilmaktadir.</p>
-        <a href="#" class="btn-default">Daha Fazla</a>
-      </div>
-      <div class="col">
-        <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/develop.svg">
-        <h2>Iceriklerimiz</h2>
-        <p>Iceriklerimizde okuyucularımızın merak ettigi konulari ve bilgileri paylasiyoruz.</p>
-        <a href="#" class="btn-default">Daha Fazla</a>
-      </div>
-      <div class="col">
-        <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/deploy.svg">
-        <h2>Paylasim</h2>
-        <p>Paylasimlarimizi abonelerimize her ayin 1 ve 15 inde sitede yayimliyoruz </p>
-        <a href="#" class="btn-default">Daha Fazla</a>
-      </div>
-    </div>
-    <div class="clearfix"></div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Beni Hatırla</label>
   </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+  
 
-  <div class="footer">
-    <div class="container">
-      <p>&copy; HER HAKKI SAKLIDIR VE KAGAN HOLDING A.S. AITTIR ICINDEKI YAZILARI DERGIMIZIN IZINI OLMADAN FOTOKOPI TEKSIR FILM SEKLINDE VE BASKA HICBIR SEKILDE COGALTILAMAZ BASILAMAZ VE YAYINLANAMAZ.</p>
-    </div>
-  </div>
-</body>
+</form>
 
-</html>
-
-</html>
+</div>
 
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-
-
-
-
-
-
-
-</script>
 </body>
 </html>
