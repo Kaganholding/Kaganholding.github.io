@@ -1,64 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE />
+<html>
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>todoapp</title>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Web</title>
+<main charset = "utf-8" />
+
 <style>
-body{
-
-
-
-
-
-}
 .container{
 
-margin-top:120px;
-margin-right:200px;
+margin-top:110px;
+
+
 }
-
-
-
-
-
+.jumbotron {
+  background-image: url('https://s3.amazonaws.com/codecademy-content/projects/broadway/bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 800px;
+}
 </style>
 </head>
 <body>
 
 
+
+
+ <div class="jumbotron">
+
+ 
+
 <div class="container">
+
+
  <h3 class = "giris">Giriş Yap</h3>
+ 
+
  <hr>
 
 <form action="addTodo" method="post">
 
 <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Kullanıcı Adı</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">E-postanızı asla başkasıyla paylaşmayın.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Şifre</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Beni Hatırla</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Giriş Yap</button>
+<div class="form-group">
+<label for="exampleInputEmail1">Kullanıcı Adı</label>
+<input type="text" class="form-control" id="q" aria-describedby="emailHelp" placeholder="Enter email">
+    
+<!-- <small id="emailHelp" class="form-text text-muted">E-postanızı asla başkasıyla paylaşmayın.</small>-->
+</div>
+<div class="form-group">
+<label for="exampleInputPassword1">Şifre</label>
+<input type="password" class="form-control" id="w" placeholder="Password">
+</div>
+<div class="form-check">
+<input type="checkbox" class="form-check-input" id="exampleCheck1">
+<label class="form-check-label" for="exampleCheck1">Beni Hatırla</label>
+</div>
+  
 </form>
   
-
+<button onclick = "blok4()"type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+
+
+
+
+
+
+
+
+
+
 
 </div>
 
+<center>
+<a href = "web.app.html"><h1 id = "e" >.</h1></a>
+</center>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+<center>
+<h1 id = "h" ></h1>
+</center>
+
+<script>
+
+function blok4(){
+
+var m , n , l , r  ;
+
+n = document.getElementById("q").value;
+m = document.getElementById("w").value;
+
+
+if(n == 0258&& m == 0258){
+
+l = "Buraya Bas";
+r = "Hoşgeldiniz"
+
+
+}
+else{
+
+window.alert("Lutfen Tekrar Deneyiniz");
+r = "HATA"
+l = " "
+
+}
+
+
+document.getElementById("e").innerHTML = l;
+document.getElementById("h").innerHTML = r;
+}
+
+
+</script>
 </body>
 </html>
