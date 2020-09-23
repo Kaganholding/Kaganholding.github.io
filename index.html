@@ -1,1 +1,367 @@
+<!DOCTYPE />
+<html>
+<head>
 
+
+
+<title>Web</title>
+<main charset = "utf-8" />
+
+<style>
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  background-color: #333333;
+}
+
+.jumbotron {
+  background-image: url('https://s3.amazonaws.com/codecademy-content/projects/broadway/bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+
+.nav {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.nav li {
+  display: inline;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 25px;
+}
+
+.main {
+  position: relative;
+  top: 180px;
+  text-align: center;
+}
+
+.main h1 {
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 70px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+.btn-main {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  padding: 16px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.supporting {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.supporting .col {
+  float: left;
+  width: 33%;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+.supporting img {
+  height: 32px;
+}
+
+.supporting h2 {
+  font-weight: 600;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.supporting p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 50px;
+  margin-bottom: 40px;
+}
+
+.btn-default {
+  border: 1px solid #333333;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 15px 50px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer p {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+@media (max-width: 500px) {
+  .main h1 {
+    font-size: 50px;
+    padding: 0 40px;
+  }
+  .supporting .col {
+    width: 100%;
+  }
+}
+
+.sub-main{
+  width: 30%;
+  float: left;
+  margin-bottom:500px;
+
+}
+
+.button-one, .button-two, .button-three{
+  text-align: center;
+  cursor: pointer;
+  font-size:24px;
+  margin: 0 0 0 100px;
+}
+
+
+
+/*Button One*/
+.button-one {
+  padding:20px 60px;
+  outline: none;
+  background-color: #27ae60;
+  border: none;
+  border-radius:5px;
+  box-shadow: 0 9px #95a5a6;
+}
+
+.button-one:hover{
+  background-color: #2ecc71;
+}
+
+.button-one:active {
+  background-color: #2ecc71;
+  box-shadow: 0 5px #95a5a6;
+  transform: translateY(4px);
+}
+
+
+/*Button Two*/
+.button-two {
+  border-radius: 4px;
+  background-color:#d35400;
+  border: none;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+}
+
+
+.button-two span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-two span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-two:hover span {
+  padding-right: 25px;
+}
+
+.button-two:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/*Button Three*/
+.button-three {
+    position: relative;
+    background-color: #f39c12;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.button-three:hover{
+   background:#fff;
+   box-shadow:0px 2px 10px 5px #97B1BF;
+   color:#000;
+}
+
+.button-three:after {
+    content: "";
+    background: #f1c40f;
+    display: block;
+    position: absolute;
+    padding-top: 100%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button-three:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<html>
+
+<html>
+
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' href='style.css' />
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <ul class="nav">
+        <li>Hakkinda</li>
+        <li>Giris Yap</li>
+        <li>Abonelik</li>
+        <li>Iletisim</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="jumbotron">
+    <div class="container">
+      <div class="main">
+	 
+		<h1>KAGAN YAYINCILIK</h1>
+	
+  <div class="main">
+  
+    <div class="sub-main">
+      <a href = "https://www.google.com.tr/"><Button class="button-one">Cıkış Yap</button></a>
+    </div>
+    <div class="sub-main">
+     <a href = "wepapp.01."><button class="button-two"><span>Temmuz Ayı 1.Dergimiz</span></button></a>
+    </div>
+    <div class="sub-main">
+    <button class="button-three">Dergimizi bilgisayar ile acmanız tavsiye edilir</button>
+    </div>
+   
+  </div>
+
+	
+      </div>
+    </div>
+  </div>
+
+  <div class="supporting">
+    <div class="container">
+      <div class="col">
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/design.svg">
+        <h2>Yazilarimiz</h2>
+        <p>Kagan yayincilk tarafından her ayın 1 ve 15 de dergimiz basilmaktadir.</p>
+        <a href="#" class="btn-default">Daha Fazla</a>
+      </div>
+      <div class="col">
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/develop.svg">
+        <h2>Iceriklerimiz</h2>
+        <p>Iceriklerimizde okuyucularımızın merak ettigi konulari ve bilgileri paylasiyoruz.</p>
+        <a href="#" class="btn-default">Daha Fazla</a>
+      </div>
+      <div class="col">
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/deploy.svg">
+        <h2>Paylasim</h2>
+        <p>Paylasimlarimizi abonelerimize her ayin 1 ve 15 inde sitede yayimliyoruz </p>
+        <a href="#" class="btn-default">Daha Fazla</a>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+
+  <div class="footer">
+    <div class="container">
+      <p>&copy; HER HAKKI SAKLIDIR VE KAGAN HOLDING A.S. AITTIR ICINDEKI YAZILARI DERGIMIZIN IZINI OLMADAN FOTOKOPI TEKSIR FILM SEKLINDE VE BASKA HICBIR SEKILDE COGALTILAMAZ BASILAMAZ VE YAYINLANAMAZ.</p>
+    </div>
+  </div>
+</body>
+
+</html>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
