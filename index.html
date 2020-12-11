@@ -1,30 +1,22 @@
 <!-- <!DOCTYPE />
 <html>
 <head>
-
-
-
 <title>KAGAN HOLDING</title>
 <main charset = "utf-8" />
-
 <style>
-
 html,
 body {
   margin: 0;
   padding: 0;
 }
-
 .container {
   max-width: 940px;
   margin: 0 auto;
   padding: 0 10px;
 }
-
 .header {
   background-color: #333333;
 }
-
 .jumbotron {
   background-image: url('https://s3.amazonaws.com/codecademy-content/projects/broadway/bg.jpg');
   background-size: cover;
@@ -32,12 +24,10 @@ body {
   background-repeat: no-repeat;
   height: 800px;
 }
-
 .nav {
   margin: 0;
   padding: 20px 0;
 }
-
 .nav li {
   display: inline;
   color: #fff;
@@ -47,13 +37,11 @@ body {
   text-transform: uppercase;
   margin-right: 25px;
 }
-
 .main {
   position: relative;
   top: 180px;
   text-align: center;
 }
-
 .main h1 {
   color: #333;
   font-family: 'Raleway', sans-serif;
@@ -63,7 +51,6 @@ body {
   margin-bottom: 80px;
   text-transform: uppercase;
 }
-
 .btn-main {
   background-color: #333;
   color: #fff;
@@ -75,29 +62,24 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-
 .supporting {
   padding-top: 80px;
   padding-bottom: 100px;
 }
-
 .supporting .col {
   float: left;
   width: 33%;
   font-family: 'Raleway', sans-serif;
   text-align: center;
 }
-
 .supporting img {
   height: 32px;
 }
-
 .supporting h2 {
   font-weight: 600;
   font-size: 23px;
   text-transform: uppercase;
 }
-
 .supporting p {
   font-weight: 400;
   font-size: 14px;
@@ -105,7 +87,6 @@ body {
   padding: 0 50px;
   margin-bottom: 40px;
 }
-
 .btn-default {
   border: 1px solid #333333;
   color: #333;
@@ -119,23 +100,19 @@ body {
   margin-bottom: 20px;
   padding: 15px 50px;
 }
-
 .clearfix {
   clear: both;
 }
-
 .footer {
   background-color: #333;
   color: #fff;
   padding: 30px 0;
 }
-
 .footer p {
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-size: 11px;
 }
-
 @media (max-width: 500px) {
   .main h1 {
     font-size: 50px;
@@ -145,23 +122,17 @@ body {
     width: 100%;
   }
 }
-
 .sub-main{
   width: 30%;
   float: left;
   margin-bottom:500px;
-
 }
-
 .button-one, .button-two, .button-three{
   text-align: center;
   cursor: pointer;
   font-size:24px;
   margin: 0 0 0 100px;
 }
-
-
-
 /*Button One*/
 .button-one {
   padding:20px 60px;
@@ -171,18 +142,14 @@ body {
   border-radius:5px;
   box-shadow: 0 9px #95a5a6;
 }
-
 .button-one:hover{
   background-color: #2ecc71;
 }
-
 .button-one:active {
   background-color: #2ecc71;
   box-shadow: 0 5px #95a5a6;
   transform: translateY(4px);
 }
-
-
 /*Button Two*/
 .button-two {
   border-radius: 4px;
@@ -192,15 +159,12 @@ body {
   width: 200px;
   transition: all 0.5s;
 }
-
-
 .button-two span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-
 .button-two span:after {
   content: '»';
   position: absolute;
@@ -209,17 +173,13 @@ body {
   right: -20px;
   transition: 0.5s;
 }
-
 .button-two:hover span {
   padding-right: 25px;
 }
-
 .button-two:hover span:after {
   opacity: 1;
   right: 0;
 }
-
-
 /*Button Three*/
 .button-three {
     position: relative;
@@ -233,13 +193,11 @@ body {
     text-decoration: none;
     overflow: hidden;
 }
-
 .button-three:hover{
    background:#fff;
    box-shadow:0px 2px 10px 5px #97B1BF;
    color:#000;
 }
-
 .button-three:after {
     content: "";
     background: #f1c40f;
@@ -252,7 +210,6 @@ body {
     opacity: 0;
     transition: all 0.8s
 }
-
 .button-three:active:after {
     padding: 0;
     margin: 0;
@@ -260,31 +217,76 @@ body {
     transition: 0s
 }
 .metin{
-
 margin-left:100px;
+}
+</style>
+</head>
+<body>
+<html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' href='style.css' />
 
 
 
+
+
+
+
+	font-family:sans-serif;
+	text-align:center
+}
+#countdown_container{
+	border-radius: 2px;
+	text-align: center;
+	font-weight: bold;
+	background: #a0a0a0;
+	border: 5px dashed #ffffff;
+	display: inline-block;
+	padding: 0 5px;
+}
+
+#countdown_timer>div{
+	float: left;
+	//background:#777777; /*black theme*/
+	background:#e0e0e0; /*white theme*/
+	padding:15px 20px;
+	margin:10px 5px;
+	text-align:center;
+	border-radius: 4px;
+}
+
+#countdown_timer>div>div:first-child{
+	font-size:28px;
+	//color:#ff6000; /*black theme*/
+	color:#0ab306; /*white theme*/
+	text-shadow: 0px 1px 0px #056d03; /*white theme*/
+}
+
+#countdown_timer>div>div:last-child{
+	text-transform: capitalize;
+	font-size:14px;
+	//color:#fff; /*black theme*/
+	color:#444; /*white theme*/
 }
 
 
 
 
-
-
-
+}
 </style>
 </head>
-<body>
 
-<html>
 
-<html>
 
-<head>
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
-  <link rel='stylesheet' href='style.css' />
+
+
+
+
 </head>
+
+
 
 <body>
   <div class="header">
@@ -298,14 +300,65 @@ margin-left:100px;
     </div>
   </div>
 
-<marquee bgcolor="red"><font color="white">Birtakım teknik sıkıntılar dolayısıyla web sitemiz birkaç gün güncellenemeyecektir.</font></marquee>
-
   <div class="jumbotron">
     <div class="container">
       <div class="main">
 	 
 		<h1>KAGAN HOLDING</h1>
 	
+
+<h1>BÜYÜK GÜNCELLEMEYE</h1>
+<div id="countdown_container">
+	<div id="countdown_timer"></div>
+	<div style="clear:both"></div>
+</div>
+
+
+
+
+<script>
+
+
+var countDownDate = new Date("2020/12/28 08:00:53").getTime(); //geri sayılacak ileri zamanki bir tarihi milisaniye cinsinden elde ediyoruz
+var dayText	= "Gün";
+var hourText	= "Saat";
+var minuteText	= "Dakika";
+var secondText	= "Saniye";
+if (countDownDate){ //tarih var ise
+	var x = setInterval(function() { //sayacı belirli aralıklarla yenile
+		var now = new Date().getTime(); //şimdiki zamanı al
+		var distance = countDownDate - now; //geri sayılacak tarih ile şimdiki tarih arasındaki zaman farkını al
+		if (distance < 0) { //zaman farkı yok ise belirtilen zamanı geçti
+			clearInterval(x); //sayacı sil
+			$("#countdown_timer").html("Geri sayım yapılacak ileri bir tarih yoktur");
+		}else { //zaman farkı var ise
+			//aradaki zaman farkını gün,saat,dakika,saniye olarak böl
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24)),
+				hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+				minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+				seconds = Math.floor((distance % (1000 * 60)) / 1000),
+				days = (days?'<div><div>'+days+'</div><div>'+dayText+'</div></div>':''), //gun varsa gun degerini yaz
+				hours = (hours?'<div><div>'+hours+'</div><div>'+hourText+'</div></div>':''), //saat varsa saat degerini yaz
+				minutes = (minutes?'<div><div>'+minutes+'</div><div>'+minuteText+'</div></div>':''), //dakika varsa dakika degerini yaz
+				seconds = (seconds?'<div><div>'+seconds+'</div><div>'+secondText+'</div></div>':''); //saniye varsa saniye degerini yaz
+			document.getElementById("countdown_timer").innerHTML = days + hours + minutes + seconds; //yazdır
+		}
+	}, 1000); //1 saniyede bir sayaç güncellenecek
+}
+
+</script>
+
+<h1>KALDI</h1>
+
+
+
+
+
+
+
+
+
+
   <div class="main">
   
     <div class="sub-main">
@@ -319,19 +372,15 @@ margin-left:100px;
     </div>
    
   </div>
-
 	
       </div>
     </div>
   </div>
-
 <div>
-
 <center>
        <ul type="disc">
 <h1 id = "duyuru">Duyurular:</h1>
 </center>
-
 <div class = "metin">
 	
 <h3><li>kagan.github.io güncellendi (1.2.2 surumu).</li><h3>
@@ -371,28 +420,14 @@ margin-left:100px;
     </div>
     <div class="clearfix"></div>
   </div>
-
-
   <div class="footer">
     <div class="container">
       <p>&copy; HER HAKKI SAKLIDIR VE KAGAN HOLDING A.S. AITTIR ICINDEKI YAZILARI DERGIMIZIN IZINI OLMADAN FOTOKOPI TEKSIR FILM SEKLINDE VE BASKA HICBIR SEKILDE COGALTILAMAZ BASILAMAZ VE YAYINLANAMAZ.</p>
     </div>
   </div>
 </body>
-
 </html>
-
 </html>
-
-
-
-
-
-
-
-
-
-
 </script>
 </body>
 </html>
@@ -673,8 +708,69 @@ margin-left:100px;
 
 
 
+
+
+
+
+
+	font-family:sans-serif;
+	text-align:center
+}
+#countdown_container{
+	border-radius: 2px;
+	text-align: center;
+	font-weight: bold;
+	background: #a0a0a0;
+	border: 5px dashed #ffffff;
+	display: inline-block;
+	padding: 0 5px;
+}
+
+#countdown_timer>div{
+	float: left;
+	//background:#777777; /*black theme*/
+	background:#e0e0e0; /*white theme*/
+	padding:15px 20px;
+	margin:10px 5px;
+	text-align:center;
+	border-radius: 4px;
+}
+
+#countdown_timer>div>div:first-child{
+	font-size:28px;
+	//color:#ff6000; /*black theme*/
+	color:#0ab306; /*white theme*/
+	text-shadow: 0px 1px 0px #056d03; /*white theme*/
+}
+
+#countdown_timer>div>div:last-child{
+	text-transform: capitalize;
+	font-size:14px;
+	//color:#fff; /*black theme*/
+	color:#444; /*white theme*/
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 </style>
 </head>
+
+
 <body>
 
 <html>
@@ -699,10 +795,12 @@ margin-left:100px;
     <div class="container">
       <div class="main">
 
-	      <marquee bgcolor="red"><font color="white">Birtakım teknik arızalar nedeniyle web sitemiz birkaç gün güncellenemeyecektir.</font></marquee>
-	 
+
 		<h1>KAGAN HOLDING</h1>
-	
+
+
+
+
   <div class="main">
   
     <div class="sub-main">
@@ -723,6 +821,101 @@ margin-left:100px;
   </div>
 
 <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<center>
+
+<h2>BÜYÜK GÜNCELLEMEYE<h2>
+<div id="countdown_container">
+	<div id="countdown_timer"></div>
+	<div style="clear:both"></div>
+</div>
+
+
+<div align="center">
+<script>
+
+
+var countDownDate = new Date("2021/01/05 08:00:53").getTime(); //geri sayılacak ileri zamanki bir tarihi milisaniye cinsinden elde ediyoruz
+var dayText	= "Gün";
+var hourText	= "Saat";
+var minuteText	= "Dakika";
+var secondText	= "Saniye";
+if (countDownDate){ //tarih var ise
+	var x = setInterval(function() { //sayacı belirli aralıklarla yenile
+		var now = new Date().getTime(); //şimdiki zamanı al
+		var distance = countDownDate - now; //geri sayılacak tarih ile şimdiki tarih arasındaki zaman farkını al
+		if (distance < 0) { //zaman farkı yok ise belirtilen zamanı geçti
+			clearInterval(x); //sayacı sil
+			$("#countdown_timer").html("Geri sayım yapılacak ileri bir tarih yoktur");
+		}else { //zaman farkı var ise
+			//aradaki zaman farkını gün,saat,dakika,saniye olarak böl
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24)),
+				hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+				minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+				seconds = Math.floor((distance % (1000 * 60)) / 1000),
+				days = (days?'<div><div>'+days+'</div><div>'+dayText+'</div></div>':''), //gun varsa gun degerini yaz
+				hours = (hours?'<div><div>'+hours+'</div><div>'+hourText+'</div></div>':''), //saat varsa saat degerini yaz
+				minutes = (minutes?'<div><div>'+minutes+'</div><div>'+minuteText+'</div></div>':''), //dakika varsa dakika degerini yaz
+				seconds = (seconds?'<div><div>'+seconds+'</div><div>'+secondText+'</div></div>':''); //saniye varsa saniye degerini yaz
+			document.getElementById("countdown_timer").innerHTML = days + hours + minutes + seconds; //yazdır
+		}
+	}, 1000); //1 saniyede bir sayaç güncellenecek
+}
+
+
+
+
+</script>
+
+</div>
+
+<h2>KALDI</h2>
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <center>
        <ul type="disc">
@@ -811,4 +1004,3 @@ margin-left:100px;
 </script>
 </body>
 </html>
-
