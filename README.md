@@ -1,2 +1,2 @@
-# KaganHolding.github.io
+# Kagan.com
 website
