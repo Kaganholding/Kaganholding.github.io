@@ -1,102 +1,240 @@
+
 <html>
+
 <head>
-<title>KAGAN MAGAZA</title>
-
-
 <style>
-body{
+
+html {
+  margin: auto;
+  font-family: Segoe UI;
+  background: #f8f6f2;
+  color: #333333;
+  -webkit-font-smoothing: antialiased;
+  text-align: justify;
+}
 
 
-background-color:yellow;
+s {
+  color: #9f9f9f;
+}
+
+<!--
+.logo {
+  width: 530px;
+  height: 200px;
+  //background: #1a444b;
+  background-image: url("KGNLOGOMAGAZA.png");
+  //background-size: 100%;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+-->
+
+.header {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: #ffc907;
+  color: #322737;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  width: 960px;
+  top: 120px;
+  margin: 40px auto;
+  //background: #ffffff;
+}
+
+.bookContainer {
+  vertical-align: top;
+  display: inline-block;
+  background: #ffffff;
+  width: 220px;
+  border-radius: 10px;
+  //border: 1px solid #333333;
+  text-align: center;
+  margin-bottom: 40px;
+}
 
 
+.bookContainer:hover {
+  background: #ffc907;
+  color: #515151;
+}
+
+.bookContainer a {
+  //position: absolute;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.0em;
+  width: 60px;
+  height: 30px;
+  color: #2980b9;
+}
+
+.bookImage {
+  width: 113px;
+  height: 240px;
+  //background: #1a444b;
+  background-size: 110px   200px;
+  background-repeat: no-repeat;
+  margin: 20px auto 15px;
+}
+
+#img01 {
+  background-image: url("KAGANDERGI1.png");
+}
+
+#img02 {
+  background-image: url("KAGANDERGI2.png");
+}
+
+#img03 {
+  background-image: url("KAGANDERGI3.png");
+}
+
+#img04 {
+  background-image: url("https://i.imgur.com/ySbZBvL.png");
+}
+
+#img05 {
+  background-image: url("https://i.imgur.com/uF8jWAa.png");
+}
+
+#img06 {
+  background-image: url("https://i.imgur.com/lW0Bgah.png");
+}
 
 
+.bookPrice {
+  background: #f8f6f2;
+  color: #27ae60;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  margin-top: 10px;
+  font-weight: bold;
+}
 
+.bookTitle {
+  margin: 0;
+}
 
-
+.bookEdition {
+  color: #9f9f9f;
+  margin: 5px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 </style>
-</head>
-
 <body>
-
-<h1><font color=<html>
-<head>
-<title>KAGAN YAYIMCILIK</title>
-
-
-<style>
-body{
-
-
-background-color:yellow;
-
-
-
-
-
-
-
-}
-</style>
-</head>
-
-
-
-
-<body>
-<font face="Lucida Calligraphy" size="3">Kagan Holding A.S.'ye baglıdır</font>
-<br/>
+<div class="header">
+<a href="KAGAN_MAGAZA.html"><img src="KGNLOGOMAGAZA.png"></img></a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<a href="index.html"><img src="KGNLOGO2.png" border="4" title="GERİ DÖN" height="100"></img></a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<a href="KAGAN_MAGAZA.html"><img src="KGNLOGOYAYIMCILIK.png"></img></a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+  
+  
+  <!--<div class="logo"></div>-->
+</div>
 <center>
+<div class="container">
 
-<font color="#2877f7" face="Eras Bold ITC" size="7">
-KAGAN MAGAZA
-</font>
-
-<br>
-<font size="5">
-HOSGELDINIZ
-</font>
-<br>
-<font size="5">
-DEMO SURUMU
-</font>
-
-<br/><br/><br/>
-
-<a href="KAĞAN DERGİ 1(TEMMUZ AYI) BASIM.pdf" target="new page"><img src="Adsız1.png" title="KAGAN DERGI 1. BASIMI" width="225" height="300"></a>
-<br>
-<font color="#e62a05"size="4">SADECE KAGAN MAGAZA'DA</font>
-<br>
-<font color="#1ce644"size="6">24.90 TL yerine 0 TL</font>
-<br>
-
-<br/><br/>
-<a href="KAĞAN DERGİ 2. BASIM (2. TEMMUZ AYI).pdf" target="new page"><img src="Adsız2.png" title="KAGAN DERGI 2. BASIMI" width="225" height="300"></a>
-<br>
-<font color="#e62a05"size="4">SADECE KAGAN MAGAZA'DA</font>
-<br>
-<font color="#1ce644"size="6">24.90 TL yerine 0 TL</font>
-<br>
-
-<br/><br/>
-<a href="KAĞAN DERGİ 3.BASIM (ARALIK 2020).pdf" target="new page"><img src="KAGANDERGI3.png" title="KAGAN DERGI 3. BASIMI" width="225" height="300"></a>
-<br>
-<font color="#e62a05"size="4">SADECE KAGAN MAGAZA'DA</font>
-<br>
-<font color="#1ce644"size="6">24.90 TL yerine 0 TL</font>
-<br>
-
-
-</center>
+  <a href="KAĞAN DERGİ 1(TEMMUZ AYI) BASIM.pdf">
+  <div class="bookContainer" id="book01">
+   <font color="red"><strong>SADECE KAĞAN MAĞAZA'DA</strong> </font>
+    <div class="bookImage" id="img01">&nbsp;</div>
+     "KAĞAN DERGİ 1. BASIM" <br/>
+    <font color="red"><strong>KAĞAN YAYIMCILIK </strong> </font><br/>
+     <br><br>
+	<font color="#00cc6d" size="5">ÜCRETSİZ</font>
+	</a>
+	
+	
+	
+	<!--<p class="bookTitle">
+      "KAĞAN DERGİ 1. BASIM" 
+    </p>
+    <div class="bookPrice">ÜCRETSİZ</div>
+    <p class="bookEdition">Limited Edition</p>
+   -->
+  
+  </div>
+  
+  
+    &nbsp &nbsp &nbsp
+	
+   <a href="KAĞAN DERGİ 2. BASIM (2. TEMMUZ AYI).pdf">
+  <div class="bookContainer" id="book02">
+     <font color="red"><strong>SADECE KAĞAN MAĞAZA'DA</strong> </font>
+    <div class="bookImage" id="img02">&nbsp;</div>
+    "KAĞAN DERGİ 2. BASIM" <br/>
+     <font color="red"><strong>KAĞAN YAYIMCILIK </strong> </font><br/>
+     <br><br>
+	<font color="#00cc6d" size="5">ÜCRETSİZ</font>
+	</a>
+  </div>
+  
+  
+   &nbsp &nbsp &nbsp
+ <a href="KAĞAN DERGİ 3.BASIM (ARALIK 2020).pdf">
+  <div class="bookContainer" id="book03">
+     <font color="red"><strong>SADECE KAĞAN MAĞAZA'DA</strong> </font>
+    <div class="bookImage" id="img03">&nbsp;</div>
+    "KAĞAN DERGİ 3. BASIM (ÖZEL BASIM)" <br/>
+     <font color="red"><strong>KAĞAN YAYIMCILIK</strong> </font><br/>
+    <br>
+	<font color="#00cc6d" size="5">ÜCRETSİZ</font>
+	</a>
+  </div>
+ </center>
+ 
+ 
+ <!-- 
+  <div class="bookContainer" id="book04">
+    <div class="bookImage" id="img04">&nbsp;</div>
+    "Hoxkit" <br/>
+    Abraham Russo <br/>
+    <a href="#">1.75 $</a>
+  </div>
+  
+  <div class="bookContainer" id="book05">
+    <div class="bookImage" id="img05">&nbsp;</div>
+    "My First Boeing" <br/>
+    Jake Schoppfer <br/>
+    <a href="#">9.99 $</a>
+  </div>
+  
+  <div class="bookContainer" id="book06">
+    <div class="bookImage" id="img06">&nbsp;</div>
+    "The Commisariat" <br/>
+    Ivan Sazanov <br/>
+    <a href="#">5.40 $</a>
+  </div>
+  <div class="bookContainer" id="book06">
+    <div class="bookImage" id="img06">&nbsp;</div>
+    "The Commisariat" <br/>
+    Ivan Sazanov <br/>
+    <a href="#">5.40 $</a>
+  </div>
+  <div class="bookContainer" id="book06">
+    <div class="bookImage" id="img06">&nbsp;</div>
+    "The Commisariat" <br/>
+    Ivan Sazanov <br/>
+    <a href="#">5.40 $</a>
+  </div>
+  OppenBooken
+</div>
+-->
 </body>
 
+<html>
 
 
 
-
-
-
-
-</html>
+ 
