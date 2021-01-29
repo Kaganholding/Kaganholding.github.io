@@ -21,12 +21,71 @@
 	
 	
 	
+	
+	
+h1 {
+    font-size: 2.5rem;
+}
 
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.75rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+}
 	
 	
 	
 	
 	
+
 
 
 
@@ -262,7 +321,15 @@ div.kaganbilisimyer {
   font-size: 11px;
 }
 
-
+@media (max-width: 500px) {
+  .main h1 {
+    font-size: 50px;
+    padding: 0 40px;
+  }
+  .supporting .col {
+    width: 100%;
+  }
+}
 
 .sub-main{
   width: 30%;
@@ -457,8 +524,11 @@ body {font-family: Verdana,sans-serif;}
   from {opacity: .4} 
   to {opacity: 1}
 }
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
 
-	
 .menu ul {
     list-style-type: none;
     margin: 0;
